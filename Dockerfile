@@ -10,10 +10,10 @@ COPY go.sum .
 
 RUN go mod download
 
-COPY cmd/. .
+COPY . .
 
 RUN 	useradd -M -s /usr/bin/nologin jynx && \
-	CGO_ENABLED=0 go build -o /wizbiz
+	CGO_ENABLED=0 go build -o /wizbiz cmd/main.go
 
 ##
 ## Deploy
@@ -26,7 +26,7 @@ COPY --from=build /etc/passwd /etc/passwd
 
 COPY --from=build /etc/group /etc/group
 
-COPY assets/. /assets/
+COPY --from=build /app/assets/. /assets/
 
 COPY --from=build /wizbiz /wizbiz
 
