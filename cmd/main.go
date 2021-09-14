@@ -1,22 +1,20 @@
 package main
 
 import (
-	"io"
 	"log"
 	"net/http"
-	"os"
+
+	"github.com/paganjoshua/jynx.dev/pkg/server"
+
 )
 
 func main() {
-	http.HandleFunc("/", homeHandler)
-	log.Fatal(http.ListenAndServe(":3000", nil))
+	var s server.Server
+
+	s.NewRouter()
+
+	s.Mux = s.NewMiddleware(&s.Router, s.Gzip)
+	log.Println("yo")
+	log.Fatal(http.ListenAndServe(":3000", s.Mux)) 
 }
 
-func homeHandler(w http.ResponseWriter, r *http.Request) {
-	home, err := os.Open("assets/html/index.html")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer home.Close()
-	io.Copy(w, home)
-}
