@@ -349,6 +349,7 @@ article a:hover {
 .canvas-wrapper {
 	/* display: flex;
 	justify-content: center; */
+}
 main {
 	display: grid;
 	margin: 4vw;
