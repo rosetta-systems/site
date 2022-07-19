@@ -2,8 +2,8 @@ package server
 
 import (
 	"net/http"
-	"github.com/paganjoshua/jynx.dev/pkg/middleware"
-	"github.com/paganjoshua/jynx.dev/pkg/router"
+	"github.com/rosetta-systems/site/pkg/middleware"
+	"github.com/rosetta-systems/site/pkg/router"
 )
 
 type Server struct {

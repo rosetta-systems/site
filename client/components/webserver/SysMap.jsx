@@ -2,24 +2,24 @@ import React, { useState } from 'react'
 import ReactWrapper from '../wrappers/React.jsx'
 import DraggableNode from '../DraggableNode.jsx'
 
-const System = (props) => {
+const SysMap = (props) => {
   const [s, setS] = useState({})
-  const id = "system"
+  const id = "sysmap"
   const node = {
     arrows: [
       //{color: 'lightblue', light: 'lightcoral', start: id, end: 'jynx', startAnchor: 'top', endAnchor: 'bottom', headSize: 2}
     ],
     id: id, 
-    className: 'system',
+    className: 'sysmap',
     lighten: 'lightgrey',
     style: {},
   }
   return (
-    <div className={"system-wrapper"}>
+    <div className={"sysmap-wrapper"}>
       <DraggableNode setS={setS} {...props} node={node} >
         <ReactWrapper {...props} content={node} >
           <div className={"content-padding"} >
-            System
+            SysMap
           </div>
         </ReactWrapper>
       </DraggableNode>
@@ -27,4 +27,4 @@ const System = (props) => {
   )
 }
 
-export default System
+export default SysMap

@@ -667,8 +667,8 @@ body>.main-nav ul {
 .webhooks-wrapper,
 .website-wrapper,
 .webserver-nginx-wrapper,
-.jynx-wrapper,
-.system-wrapper {
+.rosetta-wrapper,
+.sysmap-wrapper {
 	position: absolute;
 }
 
@@ -680,8 +680,8 @@ body>.main-nav ul {
 .webserver,
 .website,
 .webserver-nginx,
-.jynx,
-.system {
+.rosetta,
+.sysmap {
 	margin: 0;
 	height: 100%;
 	width: 100%;
@@ -696,8 +696,8 @@ body>.main-nav ul {
 .webserver .content-padding,
 .website .content-padding,
 .webserver-nginx .content-padding,
-.jynx .content-padding,
-.system .content-padding {
+.rosetta .content-padding,
+.sysmap .content-padding {
 	margin-top: auto;
 	margin-bottom: auto;
 }
@@ -748,14 +748,14 @@ body>.main-nav ul {
 	left: 20%;
 }
 
-.jynx-wrapper {
+.rosetta-wrapper {
 	height: 50%;
 	width: 50%;
 	top: 10%;
 	left: 15%;
 }
 
-.system-wrapper {
+.sysmap-wrapper {
 	height: 35%;
 	width: 35%;
 	top: 52%;
@@ -775,8 +775,8 @@ body>.main-nav ul {
 .webhooks .wrapper,
 .webserver-nginx .wrapper,
 .website .wrapper,
-.system .wrapper,
-.jynx .wrapper {
+.sysmap .wrapper,
+.rosetta .wrapper {
 	width: 100%;
 	transform: rotate(30deg);
 	text-align: center;

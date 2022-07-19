@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/paganjoshua/jynx.dev/pkg/server"
+	"github.com/rosetta-systems/site/pkg/server"
 
 )
 

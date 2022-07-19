@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/paganjoshua/jynx.dev/pkg/router"
+	"github.com/rosetta-systems/site/pkg/router"
 )
 
 type (

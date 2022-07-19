@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import Node from '../Node.jsx'
 import DraggableNode from '../DraggableNode.jsx'
 import Docker from '../wrappers/Docker.jsx'
-import Jynx from './Jynx.jsx'
-import System from './System.jsx'
+import Rosetta from './Rosetta.jsx'
+import SysMap from './SysMap.jsx'
 
 const Website = (props) => {
   const [s, setS] = useState({})
@@ -29,8 +29,8 @@ const Website = (props) => {
               Website
             </div> */}
             <div className={"inner"} >
-              <Jynx parent={node} s={s} />
-              <System parent={node} s={s} />
+              <Rosetta parent={node} s={s} />
+              <SysMap parent={node} s={s} />
             </div>
           </div>
         </Docker>

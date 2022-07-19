@@ -1,5 +1,5 @@
-module github.com/paganjoshua/jynx.dev
+module github.com/rosetta-systems/site
 
-go 1.16
+go 1.18
 
 require github.com/julienschmidt/httprouter v1.3.0

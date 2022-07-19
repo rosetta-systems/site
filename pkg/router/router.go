@@ -4,7 +4,7 @@ import (
 	"net/http"
   "strings"
 
-	"github.com/paganjoshua/jynx.dev/pkg/template"
+	"github.com/rosetta-systems/site/pkg/template"
 
 	"github.com/julienschmidt/httprouter"
 )
